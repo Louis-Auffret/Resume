@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/*------------------------------------------
+HEADER
+-------------------------------------------*/
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
+    font-weight: 600;
+}
+.navbar-nav .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.bg-dark {
+    background: radial-gradient(circle, rgba(34,34,34,1) 12%, rgba(37,37,37,1) 51%, rgba(22,22,22,1) 90%, rgba(14,14,14,1) 100%) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:rgb(175, 175, 175);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:rgb(0,205,198);
+}
+/* .navbar-collapse {
+    flex-grow: 0;
+    align-items: center;
+} */
+/* .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    justify-content: center;
+} */
+
+/*------------------------------------------
+MAIN
+-------------------------------------------*/
+main {
+    background-image: url(../img/Boolean.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.titrePrincipal h2 {
+    transform: rotate(-8deg);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 7em;
+    font-weight:bold;
+    color: #fff;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, .8)
+}
+main h2 {
+    color: #fff;
+}
+h3 {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, .15)
+}
+main .titre p {
+    color: rgba(245, 245, 245, 0.8);
+    font-weight: bold;
+}
+.titre {
+    background: rgba(0, 0, 0, .5);  
+}
+.interTitre {
+    background: rgb(255, 255, 255);
+}
+.interTitre p {
+    font-weight: 300;
+    color: rgb(126, 126, 126);
+}
+.listeDiplome {
+    list-style-type: none; 
+    font-weight: bold;
+}
+.listeDiplome p {
+    list-style-type: none; 
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+
+}
+.secondTitre {
+    background: rgb(235, 235, 235); 
+}
+.thirdTitre {
+    color: #fff;
+    background:rgba(0, 0, 0, .5)
+}
+.fourTitre {
+    background: linear-gradient(128deg, rgba(246,246,246,1) 12%, rgba(203,203,203,1) 55%, rgb(165, 165, 165) 100%);
+}
+.fourTitre li {
+    list-style-type: none;
+}
+.txtDiscret {
+    font-weight: 300;
+    font-size: 0.8em;
+    color: rgb(126, 126, 126);
+}
+
+.espaceList li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.espaceList2 li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+.espaceList li .meter2 {
+    margin-bottom: 20px;
+}
+.fiveTitre {
+    background-color: #fff;
+/*    background: linear-gradient(27deg, rgba(138,138,138,1) 5%, rgba(106,106,106,1) 50%, rgba(73,73,73,1) 100%); */
+    box-shadow: inset 0px 3px 20px rgba(0, 0, 0, 0.25);
+}
+.sixTitre {
+    background: linear-gradient(357deg, rgba(62,62,62,.98) 5%, rgba(41,41,41,1) 50%, rgba(23,23,23,1) 90%);
+    box-shadow: inset 0px 3px 20px rgba(0, 0, 0, 0.25);
+    color: rgb(230, 230, 230);
+}
+.sixTitre h3 {
+    color: rgb(0,205,198);
+}
+.sevenTitre {
+    background-color: rgb(226, 226, 226);
+}
+.sevenTitre p {
+    font-weight: 300;
+    color: rgb(126, 126, 126);
+}
+.sevenTitre h3 {
+    color: rgb(0,205,198);
+}
+.formulaires {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+}
+.formTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.formSecond h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.formSecond p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+/* ---- BARRE DE PROGRESSION ---- */
+.meter {
+    box-sizing: content-box;
+    height: 15px;
+    position: relative;
+    margin: 0px 0px 0px 0px; 
+    background: #555;
+    border-radius: 7px;
+    padding: 7px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.9), inset 0 3px 1px rgba(7, 7, 63, 0.25);
+}
+  .meter > span {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: cyan;
+    background: linear-gradient(128deg, rgba(0,225,220,1) 5%, rgba(0,255,246,1) 50%, rgba(105,250,255,1) 100%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.45),inset 0 -5px 6px rgba(0, 0, 0, 0.45);
+    position: relative;
+    overflow: hidden;
+}
+.meter2 {
+    box-sizing: content-box;
+    height: 15px;
+    position: relative;
+    margin: 0px; 
+    background: #555;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.25), inset 0 4px 1px rgba(0, 0, 0, 0.25);
+}
+  .meter2 > span {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: cyan;
+    background: linear-gradient(128deg, rgba(0,205,198,1) 5%, rgba(0,255,246,1) 50%, rgba(105,250,255,1) 100%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.45),inset 0 -4px 6px rgba(0, 0, 0, 0.45);
+    position: relative;
+    overflow: hidden;
+}
+/* ----------------------------- */
+.fab {
+    font-size: 4em;
+    color: rgb(36, 36, 36);
+    transition: 350ms;
+}
+.fab:hover {
+    font-size: 5em;
+    color: rgb(0,205,198);
+} 
+.btn { 
+    background: rgb(0,205,198)!important;
+    transition: 250ms!important;
+    border:none!important;
+}
+.btn:hover {
+    background: #555!important;
+}
+header button:hover {
+    transition: 250ms;
+
+    background: #555!important;
+}
+/*------------------------------------------
+FOOTER
+-------------------------------------------*/
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    font-weight: 100;
+}
