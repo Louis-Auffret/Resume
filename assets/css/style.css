@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+* ::before ::after {
+    box-sizing: border-box;
+}
+
 /*------------------------------------------
 HEADER
 -------------------------------------------*/
@@ -11,12 +15,14 @@ h1 {
     font-size: 2em;
     font-weight: 600;
 }
+h3 {
+    font-size: 40px;
+}
 .navbar-nav .nav-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-transform: uppercase;
 }
-
 .bg-dark {
     background: radial-gradient(circle, rgba(34,34,34,1) 12%, rgba(37,37,37,1) 51%, rgba(22,22,22,1) 90%, rgba(14,14,14,1) 100%) !important;
 }
@@ -41,10 +47,10 @@ main {
     background-image: url(../img/Boolean.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 .titrePrincipal h2 {
-    transform: rotate(-8deg);
+    transform: rotate(-6deg);
     font-family: 'Kaushan Script', cursive;
     font-size: 7em;
     font-weight:bold;
@@ -54,6 +60,10 @@ main {
 }
 main h2 {
     color: #fff;
+}
+.enTete {
+    display: flex;
+    flex-direction: column;
 }
 h3 {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, .15)
@@ -65,6 +75,18 @@ main .titre p {
 .titre {
     background: rgba(0, 0, 0, .5);  
 }
+.titre .fab {
+    color: #fff;
+    transition: 300ms;
+    font-size: 50px;
+}
+.titre .fab:hover {
+    color: rgb(0,205,198);
+}
+.ceciestuntest:not(:nth-child(1)) {
+    margin-left: 50px;
+}
+
 .interTitre {
     background: rgb(255, 255, 255);
 }
@@ -80,17 +102,47 @@ main .titre p {
     list-style-type: none; 
     font-weight: 500;
     color: rgb(0, 0, 0);
-
 }
 .secondTitre {
     background: rgb(235, 235, 235); 
 }
+.secondTitre p {
+    font-weight: 300;
+    color: rgb(126, 126, 126);
+}
+.secondTitre .fas {
+    font-size: 35px;
+}
+.logo:hover .pwet {
+    color: rgb(0,205,198);
+    transition: 300ms;
+}
 .thirdTitre {
     color: #fff;
-    background:rgba(0, 0, 0, .5)
+    background:rgba(0, 0, 0, .65)
+}
+.thirdTitre .fas {
+    font-size: 4vw;
+}
+.thirdTitre .far {
+    font-size: 4vw;
+}
+.thirdTitre p {
+    font-family: 'Opens Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.35vw;
 }
 .fourTitre {
     background: linear-gradient(128deg, rgba(246,246,246,1) 12%, rgba(203,203,203,1) 55%, rgb(165, 165, 165) 100%);
+    color: black;
+}
+.fourTitre h5 {
+    font-size: 25px;
+}
+.fourTitre h6 {
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: underline;
 }
 .fourTitre li {
     list-style-type: none;
@@ -154,6 +206,10 @@ main .titre p {
     font-size: 1em;
     font-weight: 200;
 }
+.formSecond .fas {
+    font-size: 30px;
+}
+
 
 /* ---- BARRE DE PROGRESSION ---- */
 .meter {
@@ -203,12 +259,12 @@ main .titre p {
     overflow: hidden;
 }
 /* ----------------------------- */
-.fab {
+.formSecond .fab {
     font-size: 4em;
     color: rgb(36, 36, 36);
     transition: 350ms;
 }
-.fab:hover {
+.formSecond .fab:hover {
     font-size: 5em;
     color: rgb(0,205,198);
 } 
@@ -220,11 +276,18 @@ main .titre p {
 .btn:hover {
     background: #555!important;
 }
+
+
 header button:hover {
     transition: 250ms;
 
     background: #555!important;
 }
+.form-one:hover input {
+    color: rgb(0,205,198);
+}
+
+
 /*------------------------------------------
 FOOTER
 -------------------------------------------*/
@@ -232,4 +295,64 @@ footer p {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.75em;
     font-weight: 100;
+}
+/* --- MARQUEE --- */
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    background-color: rgba(0, 0, 0, .8);
+}
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 4.5s linear infinite;
+}
+.marquee span {
+    font-family: 'Opens Sans',  sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    padding: 0 2vw;
+    color: rgb(0,205,198);
+}
+.marquee:hover .marquee__inner {
+    animation: marquee 2s linear infinite;
+}
+.marquee:hover span {
+    font-weight: bold;
+
+}
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+/*--- ------- ---*/
+@media (max-width: 425px){
+    .titrePrincipal {
+        padding-left: 0px;
+    }
+    .tester {
+        display: none;
+    }
+    .thirdTitre .fas {
+        font-size: 7vw;
+    }
+    .thirdTitre .far {
+        font-size: 7vw;
+    }
+    .formTitle .btn, .btn-lg, .btn-primary {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+    }
 }
