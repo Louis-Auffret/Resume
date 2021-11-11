@@ -62,7 +62,7 @@ h3 {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, .15)
 }
 main .titre p {
-    color: rgba(245, 245, 245, 0.8);
+    color: rgba(218, 218, 218, 0.95);
     font-weight: bold;
 }
 .titre {
@@ -132,6 +132,9 @@ main .titre p {
 .fourTitre h5 {
     font-size: 25px;
 }
+ul {
+    padding-inline-start: 0px!important;
+}s
 .fourTitre h6 {
     font-weight: 600;
     font-size: 17px;
@@ -299,6 +302,7 @@ footer p {
     background-color: rgba(0, 0, 0, .8);
 }
 .marquee__inner {
+    z-index: 10;
     width: fit-content;
     display: flex;
     position: relative;
@@ -329,9 +333,6 @@ footer p {
 }
 /*--- ------- ---*/
 @media (max-width: 500px){
-    .titrePrincipal {
-        padding-left: 0px;
-    }
     .tester {
         display: none;
     }
