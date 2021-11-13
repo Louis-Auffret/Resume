@@ -32,7 +32,11 @@ h3 {
 .navbar-dark .navbar-nav .nav-link:hover {
     color:rgb(0,205,198);
 }
+.logos {
+    height: 40px;
+    width: auto;
 
+}
 /*------------------------------------------
 MAIN
 -------------------------------------------*/
