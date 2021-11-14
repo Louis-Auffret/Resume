@@ -33,9 +33,15 @@ h3 {
     color:rgb(0,205,198);
 }
 .logos {
-    height: 40px;
-    width: auto;
-
+    max-height: 3rem;
+    max-width: 3rem;
+}
+.littleLogos {
+    max-height: 1.8rem;
+    max-width: 1.8rem;
+}
+h6 {
+    text-decoration: underline;
 }
 /*------------------------------------------
 MAIN
@@ -119,15 +125,16 @@ main .titre p {
     background:rgba(0, 0, 0, .65)
 }
 .thirdTitre .fas {
-    font-size: 4vw;
+    font-size: 4rem;
 }
 .thirdTitre .far {
-    font-size: 4vw;
+    font-size: 4rem;
 }
 .thirdTitre p {
     font-family: 'Opens Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.35vw;
+    font-size: 1.15rem;
+    text-align: center;
 }
 .fourTitre {
     background: linear-gradient(128deg, rgba(246,246,246,1) 12%, rgba(203,203,203,1) 55%, rgb(165, 165, 165) 100%);
@@ -340,18 +347,16 @@ footer p {
     .tester {
         display: none;
     }
+    .thirdTitre p {
+        font-family: 'Opens Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-align: center;
+    }
     .thirdTitre .fas {
-        font-size: 7vw;
+        font-size: 2rem;
     }
     .thirdTitre .far {
-        font-size: 7vw;
-    }
-    .thirdTitre .fas {
-        font-size: 10vw;
-        padding: 0 2vw;
-    }
-    .thirdTitre .far {
-        font-size: 10vw;
-        padding: 0 2vw;
+        font-size: 2rem;
     }
 }
