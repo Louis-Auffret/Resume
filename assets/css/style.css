@@ -36,6 +36,11 @@ h3 {
     max-height: 3rem;
     max-width: 3rem;
 }
+.logosG {
+    max-height: 2.3rem;
+    max-width: 2.3rem;
+    margin-left: 0.3rem;
+}
 .littleLogos {
     max-height: 1.8rem;
     max-width: 1.8rem;
