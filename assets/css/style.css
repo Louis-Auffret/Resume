@@ -68,6 +68,7 @@ main {
 }
 main h2 {
     color: #fff;
+    font-weight: 700;
 }
 .enTete {
     display: flex;
@@ -91,10 +92,6 @@ main .titre p {
 .titre .fab:hover {
     color: rgb(0,205,198);
 }
-.ceciestuntest:not(:nth-child(1)) {
-    margin-left: 50px;
-}
-
 .interTitre {
     background: rgb(255, 255, 255);
 }
