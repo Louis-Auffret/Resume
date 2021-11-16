@@ -161,19 +161,35 @@ ul {
     font-size: 0.8em;
     color: rgb(126, 126, 126);
 }
-
 .espaceList li {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.espaceList2 li {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 50px;
+.espaceList2 {
+    margin-left: 7px;
 }
 .espaceList li .meter2 {
     margin-bottom: 20px;
 }
+/*--- Listes Compétences ---*/
+li {
+    margin: 0 !important;
+}
+.espaceList3 {
+    margin-left: 20px;
+    margin-top: 11px;
+}
+.espaceList3 li {
+    margin-left: 20px;
+    margin-bottom: 24px !important;
+}
+
+.alignList {
+    display: flex;
+    justify-content: center;
+    margin: 0!important;
+}
+/*--- --------- ---*/
 .fiveTitre {
     background-color: #fff;
 /*    background: linear-gradient(27deg, rgba(138,138,138,1) 5%, rgba(106,106,106,1) 50%, rgba(73,73,73,1) 100%); */
