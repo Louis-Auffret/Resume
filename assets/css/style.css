@@ -70,6 +70,10 @@ main h2 {
     color: #fff;
     font-weight: 700;
 }
+.lienEcoles {
+    color: #7E7E7E;
+
+}
 .enTete {
     display: flex;
     flex-direction: column;
