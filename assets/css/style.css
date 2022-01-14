@@ -54,8 +54,9 @@ MAIN
 main {
     background-image: url(../img/Boolean.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-size: cover;
+    
 }
 .titrePrincipal h2 {
     transform: rotate(-7deg);
@@ -425,6 +426,17 @@ CAROUSEL
     .thirdTitre .far {
         font-size: 2rem;
     }
+    main{
+        background-image: url(../img/Boolean-mobile.jpg);
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-position: absolute;
+        background-position-x: 0;
+        background-position-y: 0;
+        background-size: 100%;
+        z-index: -1;
+    }
+    
 }
 
 
